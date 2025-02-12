@@ -1,0 +1,7 @@
+streamlit==1.40.0
+pandas>=1.0.0
+logzero>=1.7.0
+graphviz>=0.20.1
+networkx>=2.5
+xhtml2pdf>=0.2.8
+tableauhyperapi>=0.0.12345
