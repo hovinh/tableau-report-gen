@@ -10,10 +10,10 @@ from pathlib import Path
 def main():
     try:
         current_dir = Path(__file__).parent
-        app_path = current_dir / "app.py"
+        app_path = current_dir / "streamlit_app.py"
 
         if not app_path.exists():
-            print(f"Error: app.py not found at {app_path}")
+            print(f"Error: streamlit_app.py not found at {app_path}")
             sys.exit(1)
 
         cmd = ["streamlit", "run", str(app_path)]
