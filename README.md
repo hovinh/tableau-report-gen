@@ -99,7 +99,7 @@ Understanding the repository's file structure is essential for effective develop
 ```plaintext
 build/
 tableau_parser_app/
-├── streamlit_app.py
+├── app.py
 ├── components/
 │   └── uploader.py
 ├── parser/
@@ -109,6 +109,7 @@ tableau_parser_app/
 │   ├── helpers.py
 │   └── report.py
 ├── logs/
+streamlit_app.py
 .gitignore
 Dockerfile
 LICENSE
@@ -120,7 +121,7 @@ setup.py
 
 - **build/**: Contains build artifacts and compiled files.
 - **tableau_parser_app/**: Main application directory.
-  - **streamlit_app.py**: Entry point of the Streamlit application.
+  - **app.py**: Entry point of the Streamlit application when triggered by ttrgo command.
   - **components/**: Reusable UI components.
     - **uploader.py**: Handles file upload functionality.
   - **parser/**: Modules related to parsing Tableau workbooks.
@@ -129,6 +130,7 @@ setup.py
     - **dag.py**: Generates Dependency DAG visualizations.
     - **helpers.py**: Contains helper functions used across the app.
     - **report.py**: Manages report generation and export.
+- **streamlit_app.py**: Entry point of the Streamlit application once deployed to Community Cloud.
 - **logs/**: Directory for log files.
 - **.gitignore**: Specifies files and directories to be ignored by Git.
 - **Dockerfile**: Configuration for Docker containerization.
