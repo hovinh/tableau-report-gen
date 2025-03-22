@@ -99,7 +99,7 @@ Understanding the repository's file structure is essential for effective develop
 ```plaintext
 build/
 tableau_parser_app/
-├── app.py
+├── streamlit_app.py
 ├── components/
 │   └── uploader.py
 ├── parser/
@@ -120,7 +120,7 @@ setup.py
 
 - **build/**: Contains build artifacts and compiled files.
 - **tableau_parser_app/**: Main application directory.
-  - **app.py**: Entry point of the Streamlit application.
+  - **streamlit_app.py**: Entry point of the Streamlit application.
   - **components/**: Reusable UI components.
     - **uploader.py**: Handles file upload functionality.
   - **parser/**: Modules related to parsing Tableau workbooks.
